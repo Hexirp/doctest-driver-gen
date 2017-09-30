@@ -1,6 +1,6 @@
 module Main where
  import Prelude
- import Data.List (unlines)
+ import Data.List (unlines, words)
  import System.Environment (getArgs)
 
  main :: IO ()
@@ -18,7 +18,7 @@ module Main where
   "import Text.DocTest",
   "",
   "main :: IO ()",
-  "main = doctest " ++ show opts]
+  "main = doctest " ++ show (opts >>= words)]
 
  printUsage :: IO ()
  printUsage = undefined
