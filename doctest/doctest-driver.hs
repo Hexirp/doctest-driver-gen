@@ -1,1 +1,1 @@
-{-# OPTIONS_GHC -F -pgmF doctest-driver-gen -optF src app #-}
+{-# OPTIONS_GHC -F -pgmF doctest-driver-gen -optF app #-}
