@@ -6,11 +6,14 @@ module Main where
  main = do
   args <- getArgs
   case args of
-   origin : input : output : options -> ddgen origin input output options
+   source : input : output : options -> ddgen source input output options
    _ -> printUsage
  
  ddgen :: String -> String -> String -> [String] -> IO ()
- ddgen = undefined
+ ddgen _ _ out opts = writeFile out $ ddgenFile opts
+
+ ddgenFile :: [String] -> String
+ ddgenFile opts = undefined
 
  printUsage :: IO ()
  printUsage = undefined
