@@ -1,6 +1,6 @@
 name:                doctest-driver-gen
 version:             0.1.0.0
--- synopsis:
+synopsis:            Generate doctest-driver.hs
 -- description:
 homepage:            https://github.com/Hexirp/doctest-driver-gen#readme
 license:             BSD3
