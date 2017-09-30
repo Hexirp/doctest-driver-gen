@@ -1,6 +1,7 @@
 module Main where
  import Prelude
- import System.Environment(getArgs)
+ import Data.List (unlines)
+ import System.Environment (getArgs)
 
  main :: IO ()
  main = do
@@ -13,7 +14,11 @@ module Main where
  ddgen _ _ out opts = writeFile out $ ddgenFile opts
 
  ddgenFile :: [String] -> String
- ddgenFile opts = undefined
+ ddgenFile opts = unlines [
+  "import Text.DocTest",
+  "",
+  "main :: IO ()",
+  "main = doctest " ++ show opts]
 
  printUsage :: IO ()
  printUsage = undefined
