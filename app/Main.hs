@@ -15,7 +15,7 @@ module Main where
 
  ddgenFile :: [String] -> String
  ddgenFile opts = unlines [
-  "import Text.DocTest",
+  "import Test.DocTest",
   "",
   "main :: IO ()",
   "main = doctest " ++ show (opts >>= words)]
