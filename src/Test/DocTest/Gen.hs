@@ -1,6 +1,6 @@
 module Test.DocTest.Gen where
  import Prelude
- import Data.List (unlines, words)
+ import Data.List (unlines)
 
  ddgen :: [String] -> IO ()
  ddgen (src : inp : out : opts) = ddgen_output src inp out opts
@@ -14,7 +14,7 @@ module Test.DocTest.Gen where
   "import Test.DocTest",
   "",
   "main :: IO ()",
-  "main = doctest " ++ show (opts >>= words)]
+  "main = doctest " ++ show opts]
 
  ddgen_usage :: String
  ddgen_usage = undefined
