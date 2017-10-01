@@ -5,7 +5,7 @@ module Test.DocTest.Gen where
 
  ddgen :: [String] -> IO ()
  ddgen (src : inp : out : opts) = ddgen_output src inp out opts
- ddgeb _ = printUsage
+ ddgeb _ = putStrLn ddgen_usage
 
  ddgen_output :: String -> String -> String -> [String] -> IO ()
  ddgen_output _ _ out opts = writeFile out $ ddgen_file opts
@@ -17,5 +17,5 @@ module Test.DocTest.Gen where
   "main :: IO ()",
   "main = doctest " ++ show (opts >>= words)]
 
- printUsage :: IO ()
- printUsage = undefined
+ ddgen_usage :: String
+ ddgen_usage = undefined
