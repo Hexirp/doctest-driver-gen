@@ -17,4 +17,6 @@ module Test.DocTest.Gen where
   "main = doctest " ++ show opts]
 
  ddgen_usage :: String
- ddgen_usage = undefined
+ ddgen_usage = unlines [
+  "usage:",
+  "  {-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF OPTION]... #-}"]
