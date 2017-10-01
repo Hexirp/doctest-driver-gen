@@ -3,18 +3,15 @@ module Test.DocTest.Gen where
  import Data.List (unlines, words)
  import System.Environment (getArgs)
 
- main :: IO ()
- main = do
-  args <- getArgs
-  case args of
-   source : input : output : options -> ddgen source input output options
-   _ -> printUsage
+ ddgen :: [String] -> IO ()
+ ddgen (src : inp : out : opts) = ddgen_output src inp out opts
+ ddgeb _ = printUsage
 
- ddgen :: String -> String -> String -> [String] -> IO ()
- ddgen _ _ out opts = writeFile out $ ddgenFile opts
+ ddgen_output :: String -> String -> String -> [String] -> IO ()
+ ddgen_output _ _ out opts = writeFile out $ ddgen_file opts
 
- ddgenFile :: [String] -> String
- ddgenFile opts = unlines [
+ ddgen_file :: [String] -> String
+ ddgen_file opts = unlines [
   "import Test.DocTest",
   "",
   "main :: IO ()",
