@@ -16,23 +16,19 @@ module Test.DocTest.Gen where
  -- @OPTION@ is doctest's option. You can see help with @doctest --help@.
  ddgen :: [String] -> IO ()
  ddgen (src : inp : out : opts) = ddgen_output src inp out opts
- ddgen _ = putStrLn ddgen_usage
+ ddgen _                        = ddgen_usage
 
- -- | Output the generated source code to a file.
+ -- | Output driver file.
  ddgen_output :: String -> String -> String -> [String] -> IO ()
- ddgen_output _ _ out opts = writeFile out $ ddgen_file opts
-
- -- | Generate a source code.
- ddgen_file :: [String] -> String
- ddgen_file opts = unlines [
+ ddgen_output _ _ out opts = writeFile out $ unlines [
   "import Test.DocTest",
   "",
   "main :: IO ()",
   "main = doctest " ++ show opts]
 
- -- | doctest-driver-gen's usage.
- ddgen_usage :: String
- ddgen_usage = unlines [
+ -- | Print doctest-driver-gen's usage.
+ ddgen_usage :: IO ()
+ ddgen_usage = putStrLn $ unlines [
   "Usage:",
   "  doctest-driver-gen srcname input output [OPTION]...",
   "",
