@@ -20,8 +20,13 @@ module Test.DocTest.Gen where
   "main :: IO ()",
   "main = doctest " ++ show opts]
 
- -- | Usage.
+ -- | doctest-driver-gen's usage.
  ddgen_usage :: String
  ddgen_usage = unlines [
   "usage:",
-  "  {-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF OPTION]... #-}"]
+  "  doctest-driver-gen srcname input output [OPTION]...",
+  "",
+  "Or, make your driver file with the content:",
+  "  {-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF OPTION]... #-}",
+  "",
+  "OPTION is doctest's option.]
