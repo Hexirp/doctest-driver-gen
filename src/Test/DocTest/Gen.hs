@@ -4,6 +4,16 @@ module Test.DocTest.Gen where
  import Data.List (unlines)
 
  -- | Run doctest-driver-gen.
+ --
+ -- Usage:
+ --
+ -- > doctest-driver-gen srcname input output [OPTION]...
+ --
+ -- Or, make your driver file with the content:
+ --
+ -- > {-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF OPTION]... #-}
+ --
+ -- @OPTION@ is doctest's option. You can see help with @doctest --help@.
  ddgen :: [String] -> IO ()
  ddgen (src : inp : out : opts) = ddgen_output src inp out opts
  ddgen _ = putStrLn ddgen_usage
@@ -23,7 +33,7 @@ module Test.DocTest.Gen where
  -- | doctest-driver-gen's usage.
  ddgen_usage :: String
  ddgen_usage = unlines [
-  "usage:",
+  "Usage:",
   "  doctest-driver-gen srcname input output [OPTION]...",
   "",
   "Or, make your driver file with the content:",
