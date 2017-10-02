@@ -29,4 +29,4 @@ module Test.DocTest.Gen where
   "Or, make your driver file with the content:",
   "  {-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF OPTION]... #-}",
   "",
-  "OPTION is doctest's option.]
+  "OPTION is doctest's option. You can see help with \"doctest --help\"."]
