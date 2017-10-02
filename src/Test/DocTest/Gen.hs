@@ -28,7 +28,12 @@ module Test.DocTest.Gen where
  ddgen _                        = ddgen_usage
 
  -- | Output driver file.
- ddgen_output :: String -> String -> String -> [String] -> IO ()
+ ddgen_output
+  :: String -- ^ A source file name
+  -> String -- ^ A file path to input
+  -> String -- ^ A file path to output
+  -> [String] -- ^ Options for doctest
+  -> IO ()
  ddgen_output _ _ out opts = writeFile out $ unlines [
   "import Test.DocTest",
   "",
