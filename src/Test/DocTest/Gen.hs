@@ -18,6 +18,8 @@ module Test.DocTest.Gen where
  --
  -- > doctest-driver-gen srcname input output [OPTION]...
  --
+ -- @srcname@ is the name of the original source file. @input@ is the name of the file holding the input. @output@ is the name of the file where doctest-driver-gen should write its output to.
+ --
  -- Or, make your driver file with the content:
  --
  -- > {-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF OPTION]... #-}
@@ -29,10 +31,10 @@ module Test.DocTest.Gen where
 
  -- | Output driver file.
  ddgen_output
-  :: String -- ^ A source file name
-  -> String -- ^ A file path to input
-  -> String -- ^ A file path to output
-  -> [String] -- ^ Options for doctest
+  :: String -- ^ Name of the original source file.
+  -> String -- ^ Name of the file holding the input.
+  -> String -- ^ Name of the file where this should write its output to.
+  -> [String] -- ^ Options for doctest.
   -> IO ()
  ddgen_output _ _ out opts = writeFile out $ unlines [
   "import Test.DocTest",
@@ -46,7 +48,9 @@ module Test.DocTest.Gen where
   "Usage:",
   "  doctest-driver-gen srcname input output [OPTION]...",
   "",
+  "\"srcname\" is the name of the original source file. \"input\" is the name of the file holding the input. \"output\" is the name of the file where doctest-driver-gen should write its output to.",
+  "",
   "Or, make your driver file with the content:",
   "  {-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF OPTION]... #-}",
   "",
-  "OPTION is doctest's option. You can see help with \"doctest --help\"."]
+  "\"OPTION\" is doctest's option. You can see help with \"doctest --help\"."]
