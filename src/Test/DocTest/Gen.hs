@@ -12,14 +12,18 @@ module Test.DocTest.Gen where
  import Prelude
  import Data.List (unlines)
 
- -- | Run doctest-driver-gen.
- --
- -- Usage:
+ -- * Usage
+
+ -- $usage
  --
  -- > {-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF OPTION]... #-}
  --
  -- Make your driver file with the content.
  -- @OPTION@ is doctest's option. You can see help with @doctest --help@.
+
+ -- * Documentation
+
+ -- | Run doctest-driver-gen with given list of arguments.
  ddgen :: [String] -> IO ()
  ddgen (src : inp : out : opts) = ddgen_output src inp out opts
  ddgen _                        = ddgen_usage
