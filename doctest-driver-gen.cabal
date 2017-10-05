@@ -8,7 +8,7 @@ homepage:            https://github.com/Hexirp/doctest-driver-gen#readme
 license:             BSD3
 license-file:        LICENSE
 author:              Hexirp
-maintainer:          Hexirp@users.noreply.github.com
+maintainer:          https://github.com/Hexirp/doctest-driver-gen/issues
 copyright:           2017 Hexirp
 category:            Testing
 build-type:          Simple
