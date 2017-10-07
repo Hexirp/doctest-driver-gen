@@ -19,9 +19,7 @@ install:
   - stack --no-terminal --install-ghc build --test --bench --only-dependencies
 
 script:
-  - stack --no-terminal build
-  - stack --no-terminal test
-  - stack --no-terminal haddock --no-haddock-deps
+  - stack --no-terminal build --test --bench --haddock --no-haddock-deps
   - stack --no-terminal sdist
 
 cache:
