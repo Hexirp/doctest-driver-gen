@@ -1,5 +1,6 @@
 # doctest-driver-gen
 
+[![Hackage version](https://img.shields.io/hackage/v/doctest-driver-gen.svg?label=Hackage)](http://hackage.haskell.org/package/doctest-driver-gen)
 [![Build Status](https://travis-ci.org/Hexirp/doctest-driver-gen.svg?branch=master)](https://travis-ci.org/Hexirp/doctest-driver-gen)
 
 doctest-driver-gen is a doctest driver file generator. It lets you automatically generate driver file for doctest's cabal integration.
