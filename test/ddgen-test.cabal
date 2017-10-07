@@ -1,6 +1,6 @@
 name:                ddgen-test
 version:             0.1.0.0
--- synopsis:
+synopsis:            Test doctest-driver-gen
 -- description:
 homepage:            https://github.com/Hexirp/doctest-driver-gen
 license:             BSD3
