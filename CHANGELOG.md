@@ -1,5 +1,9 @@
 # Changelog for doctest-driver-gen
 
+## 0.1.0.1
+
+* Update `build-depends` to be strict.
+
 ## 0.1.0.0 (Initial)
 
 doctest-driver-gen is a doctest driver file generator. It lets you automatically generate driver file for doctest's cabal integration.
