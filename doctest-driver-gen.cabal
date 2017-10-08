@@ -18,7 +18,7 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     Test.DocTest.Gen
-  build-depends:       base >= 4.3 && < 4.11
+  build-depends:       base >= 4.5 && < 4.11
                        -- doctest 0.12 is disabled. This dependency is not truly necessary, but it looks good.
                      , doctest >= 0.8 && < 0.12 || >= 0.13 && < 0.14
   ghc-options:         -Wall
