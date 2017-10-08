@@ -1,5 +1,5 @@
 name:                doctest-driver-gen
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            Generate doctest-driver.hs
 description:         doctest-driver-gen is a doctest driver file generator.
                      It lets you automatically generate driver file for
