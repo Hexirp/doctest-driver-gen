@@ -19,6 +19,8 @@ library
   hs-source-dirs:      src
   exposed-modules:     Test.DocTest.Gen
   build-depends:       base >= 4.0 && < 4.11
+                       -- doctest 0.12 is disabled. This dependency is not truly necessary, but it looks good.
+                     , doctest >= 0.7 && < 0.12 || >= 0.13 && < 0.14
   ghc-options:         -Wall
   default-language:    Haskell2010
 
@@ -27,8 +29,6 @@ executable doctest-driver-gen
   main-is:             Main.hs
   ghc-options:         -Wall -threaded -rtsopts -with-rtsopts=-N
   build-depends:       base
-                       -- doctest 0.12 is disabled. This dependency is not truly necessary, but it looks good.
-                     , doctest >= 0.7 && < 0.12 || >= 0.13 && < 0.14
                      , doctest-driver-gen
   default-language:    Haskell2010
 
