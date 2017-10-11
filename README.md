@@ -8,10 +8,10 @@ doctest-driver-gen is a doctest driver file generator. It lets you automatically
 ## Usage
 
 ```haskell
-{-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF OPTION]... #-}
+{-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF DOCTEST_OPTION]... #-}
 ```
 
-Make your driver file with the content. `OPTION` is doctest's option. You can see help with `doctest --help`.
+Make your driver file with the content.
 
 ## Motivation
 

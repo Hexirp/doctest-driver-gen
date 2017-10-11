@@ -13,10 +13,9 @@ module Test.DocTest.Gen where
 
  -- $usage
  --
- -- > {-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF OPTION]... #-}
+ -- > {-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF DOCTEST_OPTION]... #-}
  --
  -- Make your driver file with the content.
- -- @OPTION@ is doctest's option. You can see help with @doctest --help@.
 
  -- * Documentation
 
@@ -42,7 +41,6 @@ module Test.DocTest.Gen where
  ddgen_usage :: IO ()
  ddgen_usage = putStrLn $ unlines [
   "Usage:",
-  "  {-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF OPTION]... #-}",
+  "  {-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF DOCTEST_OPTION]... #-}",
   "",
-  "Make your driver file with the content.",
-  "\"OPTION\" is doctest's option. You can see help with \"doctest --help\"."]
+  "Make your driver file with the content."]
