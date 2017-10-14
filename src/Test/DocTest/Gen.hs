@@ -7,7 +7,6 @@
 -- Provide doctest-driver-gen's functions.
 module Test.DocTest.Gen where
  import Prelude
- import Data.List (unlines)
 
  -- * Usage
 
