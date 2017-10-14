@@ -1,6 +1,9 @@
 -- |
 -- Module      : Test.DocTest.Gen
+-- Copyright   : (c) 2017 Hexirp
 --
+-- License     : BSD 3-clause "New" or "Revised" License
+-- Maintainer  : https://github.com/Hexirp/doctest-driver-gen/issues
 -- Stability   : experimental
 -- Portability : portable
 --
