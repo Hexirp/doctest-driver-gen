@@ -9,6 +9,7 @@ env:
   matrix:
   - ARGS=""
   - ARGS="--resolver lts-9"
+  - ARGS="--resolver nightly"
 
 addons:
   apt:
