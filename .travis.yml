@@ -5,6 +5,11 @@ dist: trusty
 notifications:
   email: false
 
+env:
+  matrix:
+  - ARGS=""
+  - ARGS="--resolver lts-9"
+
 addons:
   apt:
     packages:
@@ -16,13 +21,13 @@ before_install:
   - travis_retry curl -L https://www.stackage.org/stack/linux-x86_64 | tar xz --wildcards --strip-components=1 -C ~/.local/bin '*/stack'
 
 install:
-  - stack --no-terminal --install-ghc build --test --only-dependencies
+  - stack --no-terminal --install-ghc build $ARGS --test --only-dependencies
 
 script:
-  - stack --no-terminal build
-  - stack --no-terminal test
-  - stack --no-terminal haddock --no-haddock-deps
-  - stack --no-terminal sdist
+  - stack --no-terminal $ARGS build
+  - stack --no-terminal $ARGS test
+  - stack --no-terminal $ARGS haddock --no-haddock-deps
+  - stack --no-terminal $ARGS sdist
 
 cache:
   directories:
