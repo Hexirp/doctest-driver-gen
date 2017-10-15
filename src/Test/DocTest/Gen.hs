@@ -11,16 +11,6 @@
 module Test.DocTest.Gen where
  import Prelude
 
- -- * Usage
-
- -- $usage
- --
- -- > {-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF DOCTEST_OPTION]... #-}
- --
- -- Make your driver file with the content.
-
- -- * Documentation
-
  -- | Run doctest-driver-gen with given list of arguments.
  ddgen :: [String] -> IO ()
  ddgen (src : inp : out : opts) = ddgen_output src inp out opts
