@@ -8,8 +8,9 @@ notifications:
 env:
   matrix:
   - ARGS=""
+  - ARGS="--resolver lts-2"
+  - ARGS="--resolver lts-6"
   - ARGS="--resolver lts-9"
-  - ARGS="--resolver nightly"
 
 addons:
   apt:
