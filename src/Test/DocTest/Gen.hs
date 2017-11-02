@@ -29,7 +29,7 @@ module Test.DocTest.Gen where
 
  -- | Warn driver file that have definitions
  ddgen_warn :: String -> IO ()
- ddgen_warn _ = return ()
+ ddgen_warn inp = readFile inp >>= putStrLn
 
  -- | Write driver file.
  ddgen_write :: String -> [String] -> IO ()
