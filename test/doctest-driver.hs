@@ -1,1 +1,1 @@
-{-# OPTIONS_GHC -F -pgmF doctest-driver-gen -optF test #-}
+{-# OPTIONS_GHC -F -pgmF doctest-driver-gen -optF test/Example.hs #-}
