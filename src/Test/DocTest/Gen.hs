@@ -23,17 +23,11 @@ module Test.DocTest.Gen where
   -> String -- ^ Name of the file where this should write its output to.
   -> [String] -- ^ Options for doctest.
   -> IO ()
- ddgen_run _ inp out opts = do
-  ddgen_warn inp
-  ddgen_write out opts
+ ddgen_run _ _ out opts = ddgen_output out opts
 
- -- | Warn driver file that have definitions
- ddgen_warn :: String -> IO ()
- ddgen_warn inp = readFile inp >>= putStrLn
-
- -- | Write driver file.
- ddgen_write :: String -> [String] -> IO ()
- ddgen_write out opts = writeFile out $ unlines [
+ -- | Output driver file.
+ ddgen_output :: String -> [String] -> IO ()
+ ddgen_output out opts = writeFile out $ unlines [
   "import Test.DocTest",
   "",
   "main :: IO ()",
