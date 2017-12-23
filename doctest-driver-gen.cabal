@@ -1,6 +1,6 @@
 name:                doctest-driver-gen
 version:             0.1.0.1
-synopsis:            Generate driver file for doctest's cabal integration.
+synopsis:            Generate driver file for doctest's cabal integration
 description:         doctest-driver-gen is a doctest's driver file generator.
                      It lets you automatically generate driver file for
                      doctest's cabal integration.
@@ -19,7 +19,7 @@ library
   hs-source-dirs:      src
   exposed-modules:     Test.DocTest.Gen
   build-depends:       base >= 4.0 && < 4.11
-                       -- doctest 0.12 is disabled. This dependency is not truly necessary, but it looks good.
+                       -- This dependency is not truly necessary, but it looks good.
                      , doctest >= 0.7 && < 0.12 || >= 0.13 && < 0.14
   ghc-options:         -Wall
   default-language:    Haskell2010
