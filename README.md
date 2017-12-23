@@ -17,4 +17,4 @@ Make your driver file with the content.
 
 ## Motivation
 
-This package was motivated by [doctest-discover](https://hackage.haskell.org/package/doctest-discover).
+This package was motivated by [doctest-discover](https://hackage.haskell.org/package/doctest-discover). I want a simpler doctest's driver file generator.
