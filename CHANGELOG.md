@@ -1,6 +1,10 @@
 # Changelog for doctest-driver-gen
 
-* Rename `ddgen_output` to `ddgen_run`.
+## 0.2.0.0
+
+* Add `ddgen_run`.
+* Update `ddgen_output` to reduce arguments for simplicity.
+* Update `build-depends` to allow `doctest-0.14`.
 
 ## 0.1.0.1
 
