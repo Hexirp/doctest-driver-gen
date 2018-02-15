@@ -1,15 +1,16 @@
 # Changelog for doctest-driver-gen
 
+## 0.2.0.0
+
+* Add `ddgen_run`.
+* Update `ddgen_output` to reduce arguments for simplicity.
+* Update `build-depends` to allow `doctest-0.14`.
+
 ## 0.1.0.1
 
 * Update `build-depends` to be strict.
 
 ## 0.1.0.0 (Initial)
 
-doctest-driver-gen is a doctest driver file generator. It lets you automatically generate driver file for doctest's cabal integration.
-
-### Usage
-
-    {-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF OPTION]... #-}
-
-Make your driver file with the content. `OPTION` is doctest's option. You can see help with `doctest --help`.
+* Add a executable program: doctest-driver-gen.
+* Add `Test.DocTest.Gen`, `ddgen`, `ddgen_output`, and `ddgen_usage`.
