@@ -1,5 +1,9 @@
 # Changelog for doctest-driver-gen
 
+## 0.2.0.1
+
+* Update `build-depends` to allow `base-4.11.0.0`.
+
 ## 0.2.0.0
 
 * Add `ddgen_run`.
