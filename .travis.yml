@@ -18,13 +18,12 @@ before_install:
 install:
   - mkdir .nightly
   - cd .nightly
-
-script:
   - stack --no-terminal unpack doctest-driver-gen
   - cd doctest-driver-gen-0.2.0.2
+
+script:
   - stack --no-terminal init    --resolver nightly
-  - stack --no-terminal build   --resolver nightly
-  - stack --no-terminal haddock --resolver nightly
+  - stack --no-terminal build   --resolver nightly --haddock
   - stack --no-terminal test    --resolver nightly
   - stack --no-terminal bench   --resolver nightly --no-run-benchmarks
 
