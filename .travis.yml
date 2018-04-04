@@ -26,10 +26,8 @@ install:
   - stack --no-terminal $ARGS build --test --only-dependencies
 
 script:
-  - stack --no-terminal $ARGS build
+  - stack --no-terminal $ARGS build --haddock --no-haddock-deps
   - stack --no-terminal $ARGS test
-  - stack --no-terminal $ARGS haddock --no-haddock-deps
-  - stack --no-terminal $ARGS sdist
 
 cache:
   directories:
