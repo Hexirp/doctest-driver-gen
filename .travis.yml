@@ -16,16 +16,13 @@ before_install:
   - travis_retry curl -L https://www.stackage.org/stack/linux-x86_64 | tar xz --wildcards --strip-components=1 -C ~/.local/bin '*/stack'
 
 install:
-  - mkdir .nightly
-  - cd .nightly
-  - stack --no-terminal unpack doctest-driver-gen-0.2.0.2
-  - cd doctest-driver-gen-0.2.0.2
+  - stack --no-terminal build --test --only-dependencies
 
 script:
-  - stack --no-terminal init    --resolver nightly
-  - stack --no-terminal build   --resolver nightly --haddock
-  - stack --no-terminal test    --resolver nightly
-  - stack --no-terminal bench   --resolver nightly --no-run-benchmarks
+  - stack --no-terminal build
+  - stack --no-terminal test
+  - stack --no-terminal haddock --no-haddock-deps
+  - stack --no-terminal sdist
 
 cache:
   directories:
