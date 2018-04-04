@@ -18,7 +18,7 @@ before_install:
 install:
   - mkdir .nightly
   - cd .nightly
-  - stack --no-terminal unpack doctest-driver-gen
+  - stack --no-terminal unpack doctest-driver-gen-0.2.0.2
   - cd doctest-driver-gen-0.2.0.2
 
 script:
