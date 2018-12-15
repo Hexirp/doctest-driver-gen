@@ -1,5 +1,5 @@
 name:                doctest-driver-gen
-version:             0.2.0.4
+version:             0.3.0.0
 synopsis:            Generate driver file for doctest's cabal integration
 description:         doctest-driver-gen is a doctest's driver file generator.
                      It lets you automatically generate driver file for
@@ -50,4 +50,4 @@ source-repository head
 source-repository this
   type:     git
   location: https://github.com/Hexirp/doctest-driver-gen
-  tag:      0.2.0.4
+  tag:      0.3.0.0
