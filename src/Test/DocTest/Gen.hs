@@ -28,6 +28,7 @@ module Test.DocTest.Gen where
  -- | Output driver file.
  ddgen_output :: String -> [String] -> IO ()
  ddgen_output out opts = writeFile out $ unlines [
+  "import Prelude",
   "import Test.DocTest",
   "",
   "main :: IO ()",

@@ -1,5 +1,11 @@
 # Changelog for doctest-driver-gen
 
+## 0.3.0.0
+
+* Update the template file (in `ddgen_output`) to consider to
+  `NoImplicitPrelude`.
+* Fix the build fail when GHC's version is less than 8.0.x.
+
 ## 0.2.0.4
 
 * Update `build-depends` to allow `base-4.12.0.0`.

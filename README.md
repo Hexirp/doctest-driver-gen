@@ -7,6 +7,8 @@
 
 doctest-driver-gen is a doctest's driver file generator. It lets you automatically generate driver file for [doctest's cabal integration](https://github.com/sol/doctest/blob/master/README.markdown#cabal-integration).
 
+Versions of doctest available in this library: `>= 0.7 && < 0.12 || >= 0.13 && < 0.17`
+
 ## Usage
 
 ```haskell
