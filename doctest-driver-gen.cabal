@@ -19,9 +19,8 @@ library
   hs-source-dirs:      src
   exposed-modules:     Test.DocTest.Gen
   build-depends:       base >= 4.0 && < 4.13
-                       -- This dependency is not really necessary, but it looks
-                       -- good.
-                       , doctest >= 0.7 && < 0.12 || >= 0.13 && < 0.17
+                       -- Versions of doctest available in this library
+                       -- , doctest >= 0.7 && < 0.12 || >= 0.13 && < 0.17
   ghc-options:         -Wall
   default-language:    Haskell2010
 
