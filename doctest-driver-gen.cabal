@@ -29,9 +29,6 @@ executable doctest-driver-gen
   hs-source-dirs:      app
   main-is:             Main.hs
   ghc-options:         -Wall
-                       -threaded
-                       -rtsopts
-                       -with-rtsopts=-N
   build-depends:       base
                      , doctest-driver-gen
   default-language:    Haskell2010
