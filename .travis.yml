@@ -19,8 +19,7 @@ install:
   - stack --no-terminal build --test --only-dependencies
 
 script:
-  - stack --no-terminal build --haddock --no-haddock-deps
-  - stack --no-terminal test
+  - stack --no-terminal build --test --haddock --no-haddock-deps
 
 cache:
   directories:
