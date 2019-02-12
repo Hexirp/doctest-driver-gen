@@ -2,6 +2,11 @@
 
 ## 0.3.0.0
 
+* Add `build-tool-depends` to make `stack test` work normally (contribution by
+  qrilka).
+
+## 0.3.0.0
+
 * Update the template file (in `ddgen_output`) to consider to
   `NoImplicitPrelude`.
 * Fix the build fail when GHC's version is less than 8.0.x.
