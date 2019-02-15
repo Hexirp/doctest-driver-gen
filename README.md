@@ -15,7 +15,11 @@ Versions of doctest available in this library: `>= 0.7 && < 0.12 || >= 0.13 && <
 {-# OPTIONS_GHC -F -pgmF doctest-driver-gen [-optF DOCTEST_OPTION]... #-}
 ```
 
-Make your driver file with the content.
+Make your driver file with the content. There is an example:
+
+```haskell
+{-# OPTIONS_GHC -F -pgmF doctest-driver-gen -optF src -optF app #-}
+```
 
 ## Motivation
 
