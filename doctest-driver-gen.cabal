@@ -9,7 +9,7 @@ license:             BSD3
 license-file:        LICENSE
 author:              Hexirp
 maintainer:          https://github.com/Hexirp/doctest-driver-gen/issues
-copyright:           2017-2018 Hexirp
+copyright:           (C) Hexirp 2017-2019
 category:            Testing
 build-type:          Simple
 extra-source-files:  README.md, CHANGELOG.md
