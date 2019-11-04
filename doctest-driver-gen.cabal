@@ -1,5 +1,5 @@
 name:                doctest-driver-gen
-version:             0.3.0.1
+version:             0.3.0.2
 synopsis:            Generate driver file for doctest's cabal integration
 description:         doctest-driver-gen is a doctest's driver file generator.
                      It lets you automatically generate driver file for
@@ -9,7 +9,7 @@ license:             BSD3
 license-file:        LICENSE
 author:              Hexirp
 maintainer:          https://github.com/Hexirp/doctest-driver-gen/issues
-copyright:           2017-2018 Hexirp
+copyright:           (C) Hexirp 2017-2019
 category:            Testing
 build-type:          Simple
 extra-source-files:  README.md, CHANGELOG.md
@@ -18,7 +18,7 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     Test.DocTest.Gen
-  build-depends:       base >= 4.0 && < 4.13
+  build-depends:       base >= 4.0 && < 4.14
                        -- Versions of doctest available in this library
                        -- , doctest >= 0.7 && < 0.12 || >= 0.13 && < 0.17
   ghc-options:         -Wall
