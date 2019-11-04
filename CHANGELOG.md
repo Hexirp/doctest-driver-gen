@@ -1,6 +1,10 @@
 # Changelog for doctest-driver-gen
 
-## 0.3.0.0
+## 0.3.0.2
+
+* Update `build-depends` to allow `base-4.13.0.0`.
+
+## 0.3.0.1
 
 * Add `build-tool-depends` to make `stack test` work normally (contribution by
   qrilka).
