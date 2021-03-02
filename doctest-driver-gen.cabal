@@ -51,4 +51,4 @@ source-repository head
 source-repository this
   type:     git
   location: https://github.com/Hexirp/doctest-driver-gen
-  tag:      0.3.0.2
+  tag:      0.3.0.3
