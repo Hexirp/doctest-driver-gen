@@ -20,7 +20,7 @@ library
   exposed-modules:     Test.DocTest.Gen
   build-depends:       base >= 4.0 && < 4.15
                        -- Versions of doctest available in this library
-                       -- , doctest >= 0.7 && < 0.12 || >= 0.13 && < 0.17
+                       -- , doctest >= 0.7 && < 0.12 || >= 0.13 && < 0.19
   ghc-options:         -Wall
   default-language:    Haskell2010
 
