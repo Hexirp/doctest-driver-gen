@@ -1,7 +1,6 @@
 # doctest-driver-gen
 
 [![Hackage version](https://img.shields.io/hackage/v/doctest-driver-gen.svg?label=Hackage)](http://hackage.haskell.org/package/doctest-driver-gen)
-[![Build Status](https://travis-ci.org/Hexirp/doctest-driver-gen.svg?branch=master)](https://travis-ci.org/Hexirp/doctest-driver-gen)
 [![Stackage LTS](https://www.stackage.org/package/doctest-driver-gen/badge/lts)](https://www.stackage.org/lts/package/doctest-driver-gen)
 [![Stackage Nightly](https://www.stackage.org/package/doctest-driver-gen/badge/nightly)](https://www.stackage.org/nightly/package/doctest-driver-gen)
 
