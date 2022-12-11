@@ -1,0 +1,5 @@
+-- Configuration for CI generated with `haskell-ci`
+
+-- Andreas Abel, 2022-02-14, issue #16:
+-- builds with GHC 7, but `cabal v2-test` does not find module ‘Test.DocTest’
+tests: >= 8

@@ -1,8 +1,12 @@
 # Changelog for doctest-driver-gen
 
+## 0.3.0.6
+
+* Update `build-depends` to allow `base-4.17.0.0`.
+
 ## 0.3.0.5
 
-* Update `build-depends` to allow `base-4.16.0.0`
+* Update `build-depends` to allow `base-4.16.0.0`.
 
 ## 0.3.0.4
 
