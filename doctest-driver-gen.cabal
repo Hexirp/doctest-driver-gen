@@ -16,7 +16,9 @@ extra-source-files:  README.md, CHANGELOG.md
 cabal-version:       >=1.10
 
 tested-with:
-   GHC == 9.2.1
+   GHC == 9.6.1
+   GHC == 9.4.4
+   GHC == 9.2.7
    GHC == 9.0.2
    GHC == 8.10.7
    GHC == 8.8.4
@@ -35,7 +37,7 @@ tested-with:
 library
   hs-source-dirs:      src
   exposed-modules:     Test.DocTest.Gen
-  build-depends:       base >= 4.0 && < 4.18
+  build-depends:       base >= 4.0 && < 4.19
                        -- Versions of doctest available in this library
                        -- , doctest >= 0.7 && < 0.12 || >= 0.13 && < 0.21
   ghc-options:         -Wall

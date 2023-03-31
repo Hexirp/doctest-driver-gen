@@ -1,5 +1,10 @@
 -- Configuration for CI generated with `haskell-ci`
 
+-- Andreas Abel, 2023-03-28:
+-- Restrict CI runs to pushes and PRs to branches `master` and anything starting with `ci-`.
+-- This avoids duplicate CI runs.
+branches: master ci-*
+
 -- Andreas Abel, 2022-02-14, issue #16:
 -- builds with GHC 7, but `cabal v2-test` does not find module ‘Test.DocTest’
 tests: >= 8
