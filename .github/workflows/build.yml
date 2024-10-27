@@ -18,7 +18,8 @@ jobs:
           - '8.10.7'
           - '8.8.4'
     steps:
-      - uses: actions/checkout@v4
+      - name: checkout
+        uses: actions/checkout@v4
       - name: set up GHC ${{ matrix.ghc-version }}
         uses: haskell-actions/setup@v2
         id: setup

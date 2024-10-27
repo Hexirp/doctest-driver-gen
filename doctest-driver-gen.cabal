@@ -12,7 +12,7 @@ maintainer:          https://github.com/Hexirp/doctest-driver-gen/issues
 copyright:           (C) Hexirp 2017-2024
 category:            Testing
 build-type:          Simple
-extra-source-files:  README.md, CHANGELOG.md
+extra-doc-files:     README.md, CHANGELOG.md
 cabal-version:       2.0
 
 tested-with:
